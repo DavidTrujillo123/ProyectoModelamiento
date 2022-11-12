@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(150deg,#833434, #f0f1f0);
+    height: 100vh;
+}
+
+.formInicio{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+}
+.formInicio h1{
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+    border-bottom: 2px solid #6C3483;
+}
+.formInicio form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .formInicio__user{
+    position: relative;
+    border-bottom: 2px solid silver;
+    margin: 30px 0;
+}
+/* Usuario y contraseña*/
+.formInicio__user input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.formInicio__user label{
+    position: absolute;
+    top: 50%;
+    color: silver;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .3s;
+}
+
+.formInicio h2{
+    font-size: 18px;
+    position: absolute;
+    top: 70px;
+    left: 40px;
+}
+.formInicio h3{
+    font-size: 18px;
+    position: absolute;
+    top: 150px;
+    left: 40px;
+}
+.formInicio__user input:focus ~ label{
+    top: -5px;
+    color: #6C3483;
+}
+
+
+.formInicio__recordar{
+    margin: -5px 0 20px 5px;
+    color: blue;
+    cursor: pointer;
+}
+.formInicio__recordar:hover{
+    text-decoration: underline;
+}
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 30px;
+    border: 1px solid;
+    background: #d66d58;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: azure;
+    outline: none;
+}
+input[type="submit"]:hover{
+    border-color: #6C3483;
+    transition: .5s;
+}
